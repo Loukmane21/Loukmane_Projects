@@ -1,40 +1,39 @@
-# Auditing and mitigating algorithmic unfairness in credit scoring
+# Audit et atténuation des biais algorithmiques dans le scoring de crédit
 
-**Academic project — AMSE, May 2026**  
-**Authors:** Loukmane BOULANKI and Céline ADOUSSINGANDE  
-**Supervisor:** Prof. Christophe Hurlin
+**Projet académique — AMSE, mai 2026**  
+**Auteurs :** Loukmane BOULANKI et Céline ADOUSSINGANDE  
+**Encadrant :** Pr Christophe Hurlin
 
-## Research question
+## Question de recherche
 
-How can gender-related disparities in credit-scoring predictions be detected and mitigated, while considering both predictive performance and statistical uncertainty?
+Comment détecter et atténuer les disparités liées au genre dans les prédictions d'un modèle de scoring de crédit, tout en tenant compte à la fois de la performance prédictive et de l'incertitude statistique ?
 
-## Data and models
+## Données et modèles
 
-The study uses the German Credit dataset (1,000 observations) and compares:
-- Logistic Regression;
-- Random Forest;
+L'étude utilise le jeu de données German Credit (1 000 observations) et compare trois modèles :
+- régression logistique ;
+- Random Forest ;
 - LightGBM.
 
-The protected-group indicator is constructed from the available dataset fields; its limitations are discussed in the report.
+L'indicateur de groupe protégé est construit à partir des variables disponibles dans le jeu de données ; les limites de cette construction sont discutées dans le rapport.
 
-## Methodology
+## Méthodologie
 
-- Exploratory analysis and feature encoding.
-- Predictive evaluation on a stratified train/test split.
-- Threshold-based fairness diagnostics, including Disparate Impact.
-- Inferential fairness testing following Hurlin et al. (2024).
-- Fairness Partial Dependence Plot (FPDP) and variable neutralisation at prediction time.
+- Analyse exploratoire et encodage des variables.
+- Évaluation prédictive sur un échantillon d'entraînement et de test stratifié.
+- Mesures d'équité fondées sur des seuils, dont le Disparate Impact.
+- Test inférentiel d'équité suivant Hurlin et al. (2024).
+- Utilisation de Fairness Partial Dependence Plots (FPDP) et neutralisation d'une variable au moment de la prédiction.
 
-## Main result
+## Résultat principal
 
-For Random Forest, Disparate Impact is approximately 0.88 and therefore passes the four-fifths threshold, while the inferential statistical-parity test rejects the null at 5% (F = 4.53, p = 0.033). Neutralising the feature *Payment Status of Previous Credit* at modality 2 changes the test result to F = 2.49 (p = 0.114), while test accuracy increases from 0.747 to 0.763 and AUC from 0.750 to 0.754.
+Pour Random Forest, le Disparate Impact est d'environ 0,88 et satisfait donc le seuil des quatre cinquièmes, tandis que le test inférentiel de parité statistique rejette l'hypothèse nulle au seuil de 5 % (F = 4,53 ; p = 0,033). La neutralisation de la variable *Payment Status of Previous Credit* à la modalité 2 conduit à F = 2,49 (p = 0,114), tandis que l'accuracy sur le jeu de test passe de 0,747 à 0,763 et l'AUC de 0,750 à 0,754.
 
-## Limitations
+## Limites
 
-The dataset is small and dates from 1994. The protected indicator combines gender with marital-status information, and the mitigation procedure focuses on one feature at a time. These limitations constrain external validity and interpretation.
+Le jeu de données est de petite taille et date de 1994. L'indicateur de groupe protégé combine des informations relatives au genre et à la situation matrimoniale. Enfin, la procédure d'atténuation étudiée porte sur une variable à la fois. Ces limites restreignent la portée de la généralisation et de l'interprétation des résultats.
 
-## Materials
+## Ressources
 
-- [Python notebook on Google Colab](https://colab.research.google.com/drive/17nu2eLE56w4oA1UsPMfo8DQKROF4DdMr?usp=sharing)
-- The full written report should be placed in this folder when its public version is ready.
-
+- [Notebook Python sur Google Colab](https://colab.research.google.com/drive/17nu2eLE56w4oA1UsPMfo8DQKROF4DdMr?usp=sharing)
+- Le rapport complet pourra être ajouté à ce dossier dans une version destinée à la diffusion publique.
