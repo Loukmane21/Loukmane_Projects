@@ -1,23 +1,22 @@
-# TS-Mamba — Time-series forecasting
+# TS-Mamba — Prévision de séries temporelles
 
-**Topic:** Deep learning for sequential data and industrial time-series forecasting.
+**Thème :** apprentissage profond appliqué aux données séquentielles et à la prévision de séries temporelles industrielles.
 
-## Objective
+## Objectif
 
-The project studies the use of selective state-space models, through the Mamba architecture, for forecasting time series. It compares this approach with a Random Forest baseline on two applied datasets: air-traffic data associated with VINCI Airports and retail-sales data associated with Picard.
+Ce projet étudie l'utilisation des modèles à espace d'état sélectif, à travers l'architecture Mamba, pour prévoir des séries temporelles. L'approche est comparée à une méthode de référence fondée sur Random Forest, sur deux jeux de données appliqués : des données de trafic aérien associées à VINCI Airports et des données de ventes associées à Picard.
 
-## Method
+## Démarche
 
-- Review of classical forecasting methods, recurrent neural networks, Transformers and state-space models.
-- Implementation and adaptation of a Mamba-based sequence model in PyTorch.
-- Experimental protocols including zero-shot, full-shot and fine-tuning settings.
-- Comparative evaluation using forecasting errors such as MSE and RMSE.
+- Étude de méthodes classiques de prévision, des réseaux récurrents, des Transformers et des modèles à espace d'état.
+- Implémentation et adaptation d'un modèle séquentiel fondé sur Mamba avec PyTorch.
+- Étude de plusieurs protocoles expérimentaux : zero-shot, full-shot et fine-tuning.
+- Évaluation comparative à l'aide de mesures d'erreur de prévision, notamment MSE et RMSE.
 
-## Stack
+## Technologies et méthodes
 
-Python · PyTorch · Time-series modelling · Mamba / Selective State Space Models · Random Forest
+Python · PyTorch · Séries temporelles · Mamba / Selective State Space Models · Random Forest
 
-## Materials
+## Ressources
 
-The final-year project report is available separately. The source notebook / implementation should be added to this folder to make the experiments directly reproducible.
-
+Le rapport de projet de fin d'études présente le cadre théorique et les expérimentations. Le code source ou le notebook devra être ajouté à ce dossier pour permettre la reproduction directe des expériences.
