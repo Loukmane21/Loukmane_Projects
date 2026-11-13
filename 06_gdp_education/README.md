@@ -1,11 +1,10 @@
-# GDP and education indicators
+# PIB et indicateurs d'éducation
 
-**Topic:** Quantitative analysis of the relationship between economic development and education indicators.
+**Thème :** analyse quantitative des relations entre développement économique et indicateurs d'éducation.
 
-This project includes a Quarto source document and its rendered PDF report. Consult the source document for the exact variables, empirical strategy and interpretation.
+Ce projet comprend un document source Quarto ainsi que le rapport PDF correspondant. Le document source présente les variables retenues, la stratégie empirique et l'interprétation des résultats.
 
-## Materials
+## Ressources
 
-- `Project_PIB_educ.qmd` — editable Quarto source;
-- `Project_PIB_EDUC.pdf` — rendered report.
-
+- `Project_PIB_educ.qmd` — document source Quarto modifiable ;
+- `Project_PIB_EDUC.pdf` — rapport généré au format PDF.
