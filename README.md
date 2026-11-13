@@ -1,38 +1,36 @@
-# Loukmane BOULANKI — Data Science & Analytics Portfolio
+# Loukmane BOULANKI — Portfolio Data Science & Analyse de données
 
-Welcome to my portfolio. I work at the intersection of **data science, applied statistics, econometrics and data engineering**. This repository brings together academic and personal projects covering predictive modelling, time-series forecasting, computer vision, algorithmic fairness and data analysis.
+Bienvenue sur mon portfolio. Je travaille à l'intersection de la **Data Science, des statistiques appliquées, de l'économétrie et de l'ingénierie des données**. Ce dépôt rassemble des projets académiques et personnels autour de la modélisation prédictive, des séries temporelles, de la vision 3D, de l'équité algorithmique et de l'analyse de données.
 
-## Featured projects
+## Études de cas et projets à la une
 
-| Project | Focus | Main tools |
+| Projet | Sujet | Principaux outils |
 |---|---|---|
-| [TS-Mamba — Time-series forecasting](01_time_series_forecasting/README.md) | Sequence modelling and comparison with Random Forest on industrial datasets | Python, PyTorch, Mamba |
-| [Airbus AI Hackathon — LiDAR obstacle detection](02_lidar_obstacle_detection/README.md) | 3D point-cloud obstacle detection for low-altitude flight safety | PyTorch, Open3D, PointPillars++ |
-| [Credit-scoring fairness audit](03_credit_scoring_fairness/README.md) | Fairness diagnostics and mitigation for classification models | Python, scikit-learn, LightGBM |
-| [Fuel-price prediction](04_fuel_price_prediction/README.md) | Web data collection and predictive modelling | Python, XGBoost, Plotly |
-| [CAC 40 exploratory analysis](05_cac40_analysis/README.md) | Financial time-series and exploratory data analysis | Python, Pandas |
-| [GDP and education](06_gdp_education/README.md) | Quantitative analysis of economic and education indicators | R / Quarto |
+| [Bouygues Telecom — Ingénierie des données et analyse prédictive](08_bouygues_telecom_case_study/README.md) | Migration VBA vers Python, automatisation ETL et exploration de scénarios commerciaux | Python, VBA, SQL, Docker, Streamlit |
+| [TS-Mamba — Prévision de séries temporelles](01_time_series_forecasting/README.md) | Modélisation séquentielle et comparaison avec Random Forest sur des données industrielles | Python, PyTorch, Mamba |
+| [Airbus AI Hackathon — Détection d'obstacles par LiDAR](02_lidar_obstacle_detection/README.md) | Détection d'obstacles dans des nuages de points 3D | PyTorch, Open3D, PointPillars++ |
+| [Audit de l'équité algorithmique en scoring de crédit](03_credit_scoring_fairness/README.md) | Diagnostic et atténuation de disparités dans des modèles de classification | Python, scikit-learn, LightGBM |
+| [Prédiction des prix des carburants](04_fuel_price_prediction/README.md) | Collecte de données web et modélisation prédictive | Python, XGBoost, Plotly |
+| [Analyse exploratoire du CAC 40](05_cac40_analysis/README.md) | Analyse exploratoire de données financières | Python, Pandas |
+| [PIB et éducation](06_gdp_education/README.md) | Analyse quantitative d'indicateurs économiques et éducatifs | R, Quarto |
 
-## Professional case study
+## Autres projets
 
-| [Bouygues Telecom — Data Engineering & Predictive Analytics](08_bouygues_telecom_case_study/README.md) | VBA-to-Python modernisation, production ETL and configurable sales-scenario analysis | Python, VBA, SQL, Docker, Streamlit |
+- [Fondamentaux du Machine Learning](07_machine_learning_fundamentals/README.md) : exercices de régression, classification, SVM et Random Forest.
 
-## Other projects
+## Compétences
 
-- [Machine-learning fundamentals](07_machine_learning_fundamentals/README.md): Boston Housing, Iris, Wine, SVMs and Random Forests.
+**Domaines :** apprentissage supervisé, prévision de séries temporelles, modélisation statistique, analyse exploratoire, préparation et visualisation des données.
 
-## About
+**Langages et outils :** Python, SQL, R, scikit-learn, PyTorch, XGBoost, LightGBM, Pandas, NumPy, Statsmodels, Power BI, Streamlit, Plotly et Docker.
 
-**Core areas:** supervised learning, time-series forecasting, statistical modelling, exploratory data analysis, data preparation and visualisation.
+## Organisation du dépôt
 
-**Languages & tools:** Python, SQL, R, scikit-learn, PyTorch, XGBoost, LightGBM, Pandas, NumPy, Statsmodels, Power BI, Streamlit, Plotly and Docker.
+Chaque dossier contient une présentation du projet et, lorsque les ressources sont disponibles, les notebooks, rapports ou fichiers associés. Certains projets sont documentés sans code source complet : les données ou codes soumis à des restrictions de diffusion ne sont pas publiés.
 
-## Repository structure
+## À propos
 
-Each project folder contains a short overview, the relevant source files and, where available, supporting reports. Some projects are represented by notebooks or reports only; missing source code and reproducibility materials will be added as they are made available.
+Ce portfolio a pour objectif de présenter mes démarches, mes choix méthodologiques et les compétences mobilisées sur des problématiques concrètes.
 
-## Contact
-
-- GitHub: [@Loukmane21](https://github.com/Loukmane21)
-- Portfolio projects: [this repository](https://github.com/Loukmane21/Loukmane_Projects)
-
+- GitHub : [@Loukmane21](https://github.com/Loukmane21)
+- Dépôt : [Loukmane_Projects](https://github.com/Loukmane21/Loukmane_Projects)
