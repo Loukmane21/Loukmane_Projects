@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local data and secrets
+.env
+.env.*
+!.env.example
+data/raw/
+data/private/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
