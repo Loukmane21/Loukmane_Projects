@@ -1,19 +1,18 @@
-# Fuel-price prediction in France
+# Prédiction des prix des carburants en France
 
-**Topic:** Collection and predictive analysis of fuel-price data.
+**Thème :** collecte de données et modélisation prédictive des prix des carburants.
 
-## Overview
+## Présentation
 
-This project collects more than 10,000 observations through web scraping and builds a dataset for analysing and predicting fuel prices in France.
+Ce projet repose sur la collecte de plus de 10 000 observations par web scraping et la constitution d'un jeu de données destiné à l'analyse et à la prédiction des prix des carburants en France.
 
-## Methods and tools
+## Méthodes et outils
 
-- Web scraping and data preparation;
-- exploratory analysis and feature construction;
-- XGBoost-based predictive modelling;
-- interactive visualisation with Plotly.
+- Collecte de données par web scraping et préparation du jeu de données ;
+- analyse exploratoire et création de variables explicatives ;
+- modélisation prédictive avec XGBoost ;
+- visualisation interactive avec Plotly.
 
-## Source
+## Code source
 
-See the notebook: `Boulanki_Loukmane_Projet_Carburant.ipynb`.
-
+Consulter le notebook : `Boulanki_Loukmane_Projet_Carburant.ipynb`.
