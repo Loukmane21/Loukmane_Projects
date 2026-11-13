@@ -13,6 +13,10 @@ Welcome to my portfolio. I work at the intersection of **data science, applied s
 | [CAC 40 exploratory analysis](05_cac40_analysis/README.md) | Financial time-series and exploratory data analysis | Python, Pandas |
 | [GDP and education](06_gdp_education/README.md) | Quantitative analysis of economic and education indicators | R / Quarto |
 
+## Professional case study
+
+| [Bouygues Telecom — Data Engineering & Predictive Analytics](08_bouygues_telecom_case_study/README.md) | VBA-to-Python modernisation, production ETL and configurable sales-scenario analysis | Python, VBA, SQL, Docker, Streamlit |
+
 ## Other projects
 
 - [Machine-learning fundamentals](07_machine_learning_fundamentals/README.md): Boston Housing, Iris, Wine, SVMs and Random Forests.
