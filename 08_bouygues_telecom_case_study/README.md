@@ -1,62 +1,62 @@
-# Bouygues Telecom — Data Engineering & Predictive Analytics
+# Bouygues Telecom — Ingénierie des données et analyse prédictive
 
-**Professional case study** · Python · VBA · SQL · Docker · Streamlit · Predictive modelling
+**Étude de cas professionnelle** · Python · VBA · SQL · Docker · Streamlit · Modélisation prédictive
 
-> This case study describes my contributions at a high level. No source code, internal datasets, confidential metrics, or proprietary architecture details are shared.
+> Cette étude de cas présente mes contributions à un niveau général. Aucun code source interne, jeu de données de l'entreprise, indicateur confidentiel ou détail d'architecture propriétaire n'est publié.
 
-## Overview
+## Vue d'ensemble
 
-My work covered two complementary topics: modernising an existing data-processing workflow and making quantitative sales analysis more accessible to business teams.
+Mon expérience s'est articulée autour de deux volets complémentaires : la modernisation d'un processus existant de traitement des données et la mise à disposition des équipes métier d'un outil d'analyse prédictive des ventes.
 
-## 1. Modernising a VBA-based data-processing workflow
+## 1. Modernisation d'un processus de traitement initialement fondé sur VBA
 
-### Starting point
+### Contexte et compréhension de l'existant
 
-I took over an existing stack built around VBA macros. Before changing it, I needed to understand how the full process worked in production: where data came from, how it moved through the different processing stages, how transformations were applied, and how downstream teams and applications used the resulting data.
+À mon arrivée, j'ai repris un environnement de traitement reposant sur un ensemble de macros VBA. Avant d'engager la migration, j'ai dû comprendre le fonctionnement complet du processus en production : origine des données, étapes de transformation, circulation entre les différents traitements et usages des données par les applications et équipes en aval.
 
-### Approach
+### Démarche et réalisations
 
-- **Reverse engineering and process understanding:** reviewed the existing VBA-based workflow and traced data movements, transformations, dependencies and downstream uses in the production environment.
-- **Technical documentation:** documented the end-to-end process and modelled key interactions and structures using UML use-case, sequence and class diagrams.
-- **Progressive delivery:** prepared a roadmap to organise the migration into stages, track progress, obtain feedback and validate deliverables incrementally.
-- **Migration to Python:** progressively replaced the macro-based processing with a Python application connected to the Data Warehouse. The application automated ETL operations and formatted structured outputs to meet developers' requirements.
-- **Reliability and execution:** implemented non-regression tests to check that the migrated processing remained consistent, and packaged the application with Docker so the team could run it in its environment.
+- **Analyse de l'existant et cartographie des flux :** étude du fonctionnement des macros VBA, suivi des mouvements de données, des transformations, des dépendances et des usages en aval dans l'environnement de production.
+- **Documentation technique :** formalisation du processus de bout en bout et modélisation des interactions et structures à l'aide de diagrammes UML de cas d'utilisation, de séquence et de classes.
+- **Pilotage progressif :** construction d'une feuille de route pour organiser la migration par étapes, suivre l'avancement, recueillir les retours et faire valider les livrables au fur et à mesure.
+- **Migration vers Python :** remplacement progressif des traitements VBA par une application Python connectée au Data Warehouse. L'application automatise les opérations ETL et fournit aux développeurs des données structurées dans les formats attendus.
+- **Fiabilisation et exécution :** mise en place de tests de non-régression afin de vérifier la cohérence des traitements migrés, puis conteneurisation avec Docker pour faciliter le lancement de l'application par l'équipe.
 
-### Engineering practices demonstrated
+### Compétences mobilisées
 
-Legacy-system understanding · Data-flow mapping · Technical documentation · UML modelling · Incremental delivery · Python ETL · Regression testing · Docker
+Compréhension d'un système existant · Cartographie des flux de données · Documentation technique · Modélisation UML · Livraison itérative · ETL Python · Tests de non-régression · Docker
 
-## 2. Predictive analysis of mobile-offer sales drivers
+## 2. Analyse prédictive des déterminants des ventes d'offres mobiles
 
-### Business question
+### Problématique métier
 
-The second workstream focused on analysing factors associated with changes in mobile-offer sales volumes and giving business teams a way to explore different commercial assumptions.
+Le second volet consistait à étudier les facteurs associés aux variations des volumes de ventes des offres mobiles et à fournir aux équipes métier un outil leur permettant d'explorer différentes hypothèses commerciales.
 
-One example was examining how a change in the commissions paid to partners could relate to a change in sales volumes.
+Une question étudiée, par exemple, était de savoir comment une variation du commissionnement versé aux partenaires pouvait être associée à une évolution des volumes de ventes.
 
-### Approach and deliverable
+### Démarche et réalisation
 
-- Analysed commercial data to study the determinants associated with changes in mobile-offer sales volumes.
-- Developed a predictive-analysis approach to explore relationships between explanatory variables and sales indicators.
-- Built a Streamlit interface through which business users could configure their analysis, choose the KPIs they wanted to examine and adjust relevant scenario parameters.
-- Enabled users to modify assumptions — including partner commission levels — and observe the corresponding changes in predicted sales volumes and selected indicators.
+- Analyse des données commerciales afin d'étudier les déterminants associés aux évolutions des volumes de ventes des offres mobiles.
+- Mise en place d'une démarche de modélisation prédictive pour explorer les relations entre les variables explicatives et les indicateurs commerciaux.
+- Développement d'une interface Streamlit permettant aux utilisateurs métier de paramétrer leurs analyses, de sélectionner les KPI à examiner et de modifier les paramètres des scénarios.
+- Possibilité de faire varier certaines hypothèses — notamment le niveau de commissionnement des partenaires — puis d'observer les variations correspondantes des volumes de ventes prédits et des indicateurs sélectionnés.
 
-### Business value
+### Apport pour les équipes métier
 
-The interface made quantitative analysis more accessible to non-technical users. Rather than requiring them to manipulate code or datasets, it provided a configurable way to explore commercial scenarios and support data-informed discussions.
+L'interface rend l'analyse quantitative accessible à des utilisateurs non techniques. Sans avoir à manipuler le code ou les jeux de données, ils peuvent configurer leurs analyses, explorer des scénarios commerciaux et alimenter leurs réflexions à partir de résultats issus de la modélisation.
 
-**Interpretation note:** scenario outputs are model-based predictions under specified assumptions. They should not be interpreted as proof of a causal effect unless supported by a separate causal-identification strategy.
+**Précaution d'interprétation :** les résultats des scénarios sont des prédictions conditionnelles aux hypothèses saisies dans le modèle. Ils ne constituent pas, à eux seuls, une preuve d'effet causal ; une telle conclusion nécessiterait une stratégie d'identification causale adaptée.
 
-## Skills illustrated
+## Synthèse des compétences
 
-| Area | Skills |
+| Domaine | Compétences |
 |---|---|
-| Data engineering | Python, ETL, Data Warehouse integration, data transformation |
-| Software and delivery | VBA-to-Python migration, UML, technical documentation, roadmap, Docker |
-| Data quality | Non-regression testing, progressive validation |
-| Data science | Exploratory analysis, predictive modelling, scenario analysis |
-| Business-facing tools | Streamlit, KPI configuration, decision support |
+| Ingénierie des données | Python, ETL, connexion au Data Warehouse, transformation des données |
+| Conception et livraison | Migration VBA vers Python, UML, documentation technique, feuille de route, Docker |
+| Qualité des données | Tests de non-régression, validation progressive |
+| Data Science | Analyse exploratoire, modélisation prédictive, analyse de scénarios |
+| Outils métier | Streamlit, paramétrage des KPI, aide à la décision |
 
-## Confidentiality
+## Confidentialité
 
-The examples above are intentionally described without internal data, source code, customer information, confidential performance figures or sensitive implementation details. The case study is intended to explain the nature of my contribution, not to reproduce Bouygues Telecom's internal systems.
+Cette présentation ne contient volontairement aucune donnée interne, aucun code source propriétaire, aucune information client, aucun chiffre de performance confidentiel ni détail sensible de mise en œuvre. Elle vise à décrire la nature de mes contributions sans reproduire les systèmes internes de Bouygues Telecom.
