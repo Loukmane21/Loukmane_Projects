@@ -1,25 +1,24 @@
-# Airbus AI Hackathon 2026 — LiDAR obstacle detection
+# Airbus AI Hackathon 2026 — Détection d'obstacles par LiDAR 3D
 
-**Topic:** 3D perception from LiDAR point clouds for low-altitude flight safety.
+**Thème :** perception 3D à partir de nuages de points LiDAR pour la sécurité des vols à basse altitude.
 
-## Challenge
+## Problématique
 
-The challenge focuses on detecting obstacles that can endanger low-altitude helicopter flights, including antennas, power cables, electric poles and wind turbines. The input consists of simulated LiDAR point clouds with point-wise class information.
+Le challenge porte sur la détection d'obstacles susceptibles de présenter un risque pour les vols d'hélicoptères à basse altitude : antennes, câbles électriques, poteaux et éoliennes. Les données d'entrée sont des nuages de points LiDAR simulés, comportant des informations de classification au niveau des points.
 
-## Project approach
+## Approche du projet
 
-The project description in my CV records work on:
-- a PointPillars++-based 3D detection approach;
-- reconstruction of ground-truth boxes using DBSCAN and PCA;
-- PyTorch and Open3D for modelling and point-cloud processing.
+Les travaux présentés dans mon CV comprennent :
+- une approche de détection 3D fondée sur PointPillars++ ;
+- la reconstruction de boîtes de vérité terrain (*ground-truth boxes*) à l'aide de DBSCAN et de l'analyse en composantes principales (PCA) ;
+- l'utilisation de PyTorch et Open3D pour la modélisation et le traitement des nuages de points.
 
-These are project-scope notes, not a substitute for the original implementation or a full benchmark.
+Cette présentation décrit le périmètre des travaux ; elle ne remplace pas le code source ni un benchmark expérimental complet.
 
-## Stack
+## Technologies et méthodes
 
-Python · PyTorch · Open3D · Point clouds · PointPillars++ · DBSCAN · PCA
+Python · PyTorch · Open3D · Nuages de points · PointPillars++ · DBSCAN · PCA
 
-## Materials and reproducibility
+## Ressources et reproductibilité
 
-The implementation notebook, scripts, configuration and permitted sample visualisations still need to be added. No challenge data or proprietary / restricted material is included here.
-
+Le notebook, les scripts, les configurations et les éventuelles visualisations autorisées ne sont pas disponibles dans ce dépôt à ce stade. Aucune donnée du challenge ni aucun contenu à diffusion restreinte n'est publié ici.
