@@ -1,10 +1,9 @@
-# CAC 40 — Exploratory data analysis
+# CAC 40 — Analyse exploratoire
 
-**Topic:** Exploratory analysis of French equity-market data.
+**Thème :** analyse exploratoire de données relatives au marché actions français.
 
-This notebook explores CAC 40 market data through data preparation, descriptive analysis and visualisation. The notebook is the primary source for the scope and exact methods used.
+Ce notebook présente une exploration de données du CAC 40 à travers leur préparation, des statistiques descriptives et des visualisations. Le notebook constitue la référence pour le périmètre exact de l'étude et les méthodes effectivement mises en œuvre.
 
-## Source
+## Code source
 
-See `B_Loukmane_CAC40_EDA_Project.ipynb`.
-
+Consulter `B_Loukmane_CAC40_EDA_Project.ipynb`.
