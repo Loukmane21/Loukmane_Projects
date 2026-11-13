@@ -1,11 +1,10 @@
-# Machine-learning fundamentals
+# Fondamentaux du Machine Learning
 
-This folder groups introductory and comparative machine-learning notebooks.
+Ce dossier regroupe plusieurs notebooks d'initiation et de comparaison de méthodes d'apprentissage automatique.
 
-## Included work
+## Projets inclus
 
-- **Boston Housing and Iris:** regression and classification exercises — `B_Loukmane_Boston_Housing_Iris.ipynb`.
-- **Wine quality:** support-vector machines and Random Forests — `SVMs_Random_Forests_Wine_Dataset_Project.ipynb`.
+- **Boston Housing et Iris :** exercices de régression et de classification — `B_Loukmane_Boston_Housing_Iris.ipynb`.
+- **Qualité du vin :** étude de méthodes SVM et Random Forest — `SVMs_Random_Forests_Wine_Dataset_Project.ipynb`.
 
-The notebooks contain the implementation and experiments. Refer to them for the precise preprocessing steps, model settings and evaluation results.
-
+Les notebooks contiennent les implémentations et les expérimentations. Ils constituent la référence pour les étapes de prétraitement, les paramètres des modèles et les résultats d'évaluation.
