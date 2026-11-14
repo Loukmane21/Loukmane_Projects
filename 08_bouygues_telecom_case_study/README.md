@@ -1,62 +1,29 @@
-# Bouygues Telecom — Ingénierie des données et analyse prédictive
+# Bouygues Telecom — Data Analyst & Data Scientist
 
-**Étude de cas professionnelle** · Python · VBA · SQL · Docker · Streamlit · Modélisation prédictive
+**Python · SQL · VBA · Docker · Streamlit · Machine Learning**
 
-> Cette étude de cas présente mes contributions à un niveau général. Aucun code source interne, jeu de données de l'entreprise, indicateur confidentiel ou détail d'architecture propriétaire n'est publié.
+Cette expérience s'est articulée autour de deux sujets : la modernisation d'un processus de traitement de données et l'analyse prédictive des ventes d'offres mobiles.
 
-## Vue d'ensemble
+## Modernisation des traitements de données
 
-Mon expérience s'est articulée autour de deux volets complémentaires : la modernisation d'un processus existant de traitement des données et la mise à disposition des équipes métier d'un outil d'analyse prédictive des ventes.
+Le travail a commencé par l'étude d'un ensemble de macros VBA utilisées en production. L'objectif était de comprendre les sources de données, les différentes étapes de transformation et les échanges avec les applications en aval avant de faire évoluer le processus.
 
-## 1. Modernisation d'un processus de traitement initialement fondé sur VBA
+- Analyse des traitements existants et cartographie des flux de données.
+- Documentation du fonctionnement à l'aide de diagrammes UML (cas d'utilisation, séquence et classes).
+- Migration progressive des traitements vers une application Python connectée au Data Warehouse.
+- Automatisation des opérations ETL et préparation des données dans les formats attendus par les équipes de développement.
+- Mise en place de tests de non-régression et utilisation de Docker pour faciliter l'exécution de l'application.
 
-### Contexte et compréhension de l'existant
+## Analyse prédictive des ventes
 
-À mon arrivée, j'ai repris un environnement de traitement reposant sur un ensemble de macros VBA. Avant d'engager la migration, j'ai dû comprendre le fonctionnement complet du processus en production : origine des données, étapes de transformation, circulation entre les différents traitements et usages des données par les applications et équipes en aval.
+Le second sujet portait sur l'étude des facteurs associés aux volumes de vente des offres mobiles et sur la mise à disposition d'un outil d'analyse pour les équipes métier.
 
-### Démarche et réalisations
+- Analyse des données commerciales et des variables associées aux volumes de vente.
+- Développement d'une approche prédictive pour explorer différents scénarios.
+- Création d'une interface Streamlit permettant de sélectionner les KPI et de modifier certaines hypothèses, notamment le commissionnement des partenaires.
+- Visualisation des volumes prédits selon les paramètres retenus.
 
-- **Analyse de l'existant et cartographie des flux :** étude du fonctionnement des macros VBA, suivi des mouvements de données, des transformations, des dépendances et des usages en aval dans l'environnement de production.
-- **Documentation technique :** formalisation du processus de bout en bout et modélisation des interactions et structures à l'aide de diagrammes UML de cas d'utilisation, de séquence et de classes.
-- **Pilotage progressif :** construction d'une feuille de route pour organiser la migration par étapes, suivre l'avancement, recueillir les retours et faire valider les livrables au fur et à mesure.
-- **Migration vers Python :** remplacement progressif des traitements VBA par une application Python connectée au Data Warehouse. L'application automatise les opérations ETL et fournit aux développeurs des données structurées dans les formats attendus.
-- **Fiabilisation et exécution :** mise en place de tests de non-régression afin de vérifier la cohérence des traitements migrés, puis conteneurisation avec Docker pour faciliter le lancement de l'application par l'équipe.
+## Environnement technique
 
-### Compétences mobilisées
+Python · SQL · VBA · ETL · Data Warehouse · UML · Docker · Streamlit · Machine Learning
 
-Compréhension d'un système existant · Cartographie des flux de données · Documentation technique · Modélisation UML · Livraison itérative · ETL Python · Tests de non-régression · Docker
-
-## 2. Analyse prédictive des déterminants des ventes d'offres mobiles
-
-### Problématique métier
-
-Le second volet consistait à étudier les facteurs associés aux variations des volumes de ventes des offres mobiles et à fournir aux équipes métier un outil leur permettant d'explorer différentes hypothèses commerciales.
-
-Une question étudiée, par exemple, était de savoir comment une variation du commissionnement versé aux partenaires pouvait être associée à une évolution des volumes de ventes.
-
-### Démarche et réalisation
-
-- Analyse des données commerciales afin d'étudier les déterminants associés aux évolutions des volumes de ventes des offres mobiles.
-- Mise en place d'une démarche de modélisation prédictive pour explorer les relations entre les variables explicatives et les indicateurs commerciaux.
-- Développement d'une interface Streamlit permettant aux utilisateurs métier de paramétrer leurs analyses, de sélectionner les KPI à examiner et de modifier les paramètres des scénarios.
-- Possibilité de faire varier certaines hypothèses — notamment le niveau de commissionnement des partenaires — puis d'observer les variations correspondantes des volumes de ventes prédits et des indicateurs sélectionnés.
-
-### Apport pour les équipes métier
-
-L'interface rend l'analyse quantitative accessible à des utilisateurs non techniques. Sans avoir à manipuler le code ou les jeux de données, ils peuvent configurer leurs analyses, explorer des scénarios commerciaux et alimenter leurs réflexions à partir de résultats issus de la modélisation.
-
-**Précaution d'interprétation :** les résultats des scénarios sont des prédictions conditionnelles aux hypothèses saisies dans le modèle. Ils ne constituent pas, à eux seuls, une preuve d'effet causal ; une telle conclusion nécessiterait une stratégie d'identification causale adaptée.
-
-## Synthèse des compétences
-
-| Domaine | Compétences |
-|---|---|
-| Ingénierie des données | Python, ETL, connexion au Data Warehouse, transformation des données |
-| Conception et livraison | Migration VBA vers Python, UML, documentation technique, feuille de route, Docker |
-| Qualité des données | Tests de non-régression, validation progressive |
-| Data Science | Analyse exploratoire, modélisation prédictive, analyse de scénarios |
-| Outils métier | Streamlit, paramétrage des KPI, aide à la décision |
-
-## Confidentialité
-
-Cette présentation ne contient volontairement aucune donnée interne, aucun code source propriétaire, aucune information client, aucun chiffre de performance confidentiel ni détail sensible de mise en œuvre. Elle vise à décrire la nature de mes contributions sans reproduire les systèmes internes de Bouygues Telecom.
